@@ -7,7 +7,7 @@ function Profile(props) {
       <div className="ProfileCard-container">
         <img
           className="Profilephoto"
-          src={"/" + props.children + ".jpg"}
+          src={"/" + props.children}
           alt="image"
         />
         <h2
@@ -39,12 +39,13 @@ Profile.defaultProps = {
   Profession: "none",
   Bio: "none",
   handleName: (name) => alert(name),
+  children: "profile.png",
 };
 Profile.propTypes = {
   Fullname: PropTypes.string,
   Profession: PropTypes.string,
   Bio: PropTypes.string,
-  Fullname: PropTypes.func,
+  handleName: PropTypes.func,
 };
 
 export default Profile;

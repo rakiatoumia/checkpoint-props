@@ -14,7 +14,7 @@ function App() {
           Profession="Web Developper"
           Bio="Quisque sollicitudin lacus accumsan tincidunt potenti primis nullam scelerisque lectus"
         >
-          photo
+          photo.jpg
         </Profile>
       </div>
     </div>
