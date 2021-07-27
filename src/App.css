@@ -67,11 +67,24 @@ span {
   font-size: 25px;
 }
 
+.App {
+  width: 80%;
+  margin: 10px auto;
+  height: 800px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
 /*********************************************** HEADER ***********************************************/
 header {
   height: 50px;
 }
+.header-contain {
+  width: 50%;
+  margin: 0 auto;
+}
 .header-menu {
+  margin: 0, auto;
   font-size: 17px;
   line-height: 80px;
 }
@@ -121,9 +134,8 @@ header {
 }
 
 .block {
-  margin-bottom: 25px;
+  margin: 0, auto;
   background: #3d5c99;
-  border-radius: 5px;
 }
 
 .ProfileCard {
@@ -143,7 +155,7 @@ header {
 
 .ProfileCard-container {
   position: absolute;
-  width: 20%;
+  width: 25%;
   height: 400px;
   background-color: #3d5c99;
   margin-top: 10px;
@@ -155,4 +167,28 @@ h2,
 h3 {
   color: white;
   font-family: "icomoon";
+}
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #7ecde8;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 7px #999;
+}
+
+.button:hover {
+  background-color: #7ecde8;
+}
+
+.button:active {
+  background-color: #7ecde8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

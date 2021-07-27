@@ -10,11 +10,24 @@ function Profile(props) {
           src={"/" + props.children + ".jpg"}
           alt="image"
         />
-        <h2>{props.Fullname}</h2>
+        <h2
+          style={{
+            backgroundColor: "lightblue",
+            width: 150,
+            textAlign: "center",
+            margin: "auto",
+            borderRadius: 5,
+          }}
+        >
+          {props.Fullname}
+        </h2>
         <h3>{props.Profession}</h3>
         <p>{props.Bio}</p>
-        <button onClick={() => props.alertMyInput("hello " + props.Fullname)}>
-          ClickMe
+        <button
+          className="button"
+          onClick={() => props.handleName(" Hello " + props.Fullname)}
+        >
+          Show Alert
         </button>
       </div>
     </div>
@@ -25,7 +38,7 @@ Profile.defaultProps = {
   Fullname: "rakia toumia",
   Profession: "none",
   Bio: "none",
-  alertMyInput: (name) => alert(name),
+  handleName: (name) => alert(name),
 };
 Profile.propTypes = {
   Fullname: PropTypes.string,

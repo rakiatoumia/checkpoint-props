@@ -2,21 +2,21 @@ import "./App.css";
 import Profile from "./Profile/Profile";
 import Navigationbar from "./Navigationbar";
 function App() {
-  const alertMyInput = (name) => alert(name);
+  const handleName = (name) => alert(name);
 
   return (
-    <div className="App">
+    <div>
       <Navigationbar />
-      <Profile
-/*         alertMyInput={alertMyInput}
- */        Fullname="Paolo coelho"
-        Profession="Web Developper"
-        Bio="Quisque sollicitudin lacus accumsan tincidunt potenti primis nullam scelerisque lectus"
-      >
-        photo
-      </Profile>
-      {/*       <User data={getData("Rakia Toumia")} />
-       */}{" "}
+      <div className="App">
+        <Profile
+          handleName={handleName}
+          Fullname="Paolo coelho"
+          Profession="Web Developper"
+          Bio="Quisque sollicitudin lacus accumsan tincidunt potenti primis nullam scelerisque lectus"
+        >
+          photo
+        </Profile>
+      </div>
     </div>
   );
 }
